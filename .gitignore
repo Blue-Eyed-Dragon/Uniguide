@@ -1,0 +1,26 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+uniguide/data/uniguide.db
+uniguide/data/chroma/
+uniguide/tests/_test_data/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Runtime DB/vector store actually live here (DATABASE_URL/CHROMA_PERSIST_DIR
+# in uniguide/.env point at repo-root data/, not uniguide/data/)
+data/uniguide.db
+data/chroma/
+
+# Google service account key(s) / OAuth client secrets - never commit credentials
+data/*.json
+uniguide/data/*service-account*.json
+uniguide/data/*credentials*.json
+uniguide/data/kaggle-comp-*.json
+uniguide/data/*.token.json
+
+# Personal/utility scripts not meant for the tracked repo
+uniguide/delete_agent_calendar_events.py

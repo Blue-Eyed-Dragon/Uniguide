@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+}
+
+/* Blue + white theme matching the UniGuide logo. Light mode is the default;
+   dark mode is toggled via a `.dark` class on <html> (added in the polish sprint). */
+:root {
+  --background: #f5f7fb;
+  --foreground: #1a1a1a;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --primary: #2f5fa8;
+  --primary-foreground: #ffffff;
+  --secondary: #e8edf6;
+  --secondary-foreground: #14213d;
+  --muted: #dbe3f0;
+  --muted-foreground: #5b6b85;
+  --accent: #14213d;
+  --accent-foreground: #ffffff;
+  --success: #2e7d4f;
+  --success-foreground: #ffffff;
+  --warning: #b5651d;
+  --warning-foreground: #ffffff;
+  --destructive: #b3261e;
+  --destructive-foreground: #ffffff;
+  --border: #dbe3f0;
+  --input: #dbe3f0;
+  --ring: #2f5fa8;
+  --radius: 0.625rem;
+}
+
+.dark {
+  --background: #0d1526;
+  --foreground: #ededed;
+  --card: #1b1f2a;
+  --card-foreground: #ededed;
+  --primary: #4a7bc4;
+  --primary-foreground: #0d1526;
+  --secondary: #1b1f2a;
+  --secondary-foreground: #ededed;
+  --muted: #dbe3f0;
+  --muted-foreground: #9fb1cc;
+  --accent: #6b93cd;
+  --accent-foreground: #0d1526;
+  --success: #4caf77;
+  --success-foreground: #0f1a33;
+  --warning: #d98a4b;
+  --warning-foreground: #12151c;
+  --destructive: #e5534b;
+  --destructive-foreground: #12151c;
+  --border: #223154;
+  --input: #223154;
+  --ring: #4a7bc4;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font: 15px/1.5 system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
+#root {
+  min-height: 100svh;
+}

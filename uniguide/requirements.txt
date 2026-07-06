@@ -1,0 +1,42 @@
+# Google ADK & LLM
+google-adk
+google-generativeai>=0.7
+google-auth>=2.0
+google-auth-oauthlib
+google-api-python-client
+litellm  # lets ADK agents run on Groq (default) or Claude instead of Gemini (LLM_PROVIDER=groq|claude)
+
+# Vector store & embeddings
+chromadb>=0.5
+numpy>=1.26
+sentence-transformers>=3.0  # local embedding fallback (EMBEDDING_PROVIDER=local)
+
+# Data & persistence
+sqlalchemy>=2.0
+aiosqlite  # async driver needed by ADK's DatabaseSessionService (uniguide/chat.py)
+alembic
+pydantic>=2.0
+pydantic-settings
+pandas>=2.0
+
+# Document & file handling
+pdfplumber>=0.11
+PyMuPDF>=1.24
+openpyxl
+python-docx
+
+# API, CLI & utilities
+click>=8.0
+rich
+python-dotenv
+httpx
+tenacity
+loguru
+fastapi
+uvicorn[standard]
+
+# Testing & dev
+pytest>=8.0
+pytest-asyncio
+pytest-mock
+ruff

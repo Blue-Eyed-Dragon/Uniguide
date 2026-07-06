@@ -1,0 +1,31 @@
+course_id,title,description,ects,tags,semester_offered,prerequisites,mandatory,link,day_of_week,start_time,end_time
+DS101,Statistical Learning,"Foundations of statistical learning theory including regression, classification, and resampling methods.",6,statistics;ml,1;3,,true,https://lsf.tu-dortmund.de/courses/DS101,Mon,08:00,10:00
+DS102,Advanced Machine Learning,"Deep dive into ensemble methods, kernel methods, and model selection for supervised learning.",6,ml,1;3,DS101,true,https://lsf.tu-dortmund.de/courses/DS102,Tue,08:00,10:00
+DS103,Deep Learning,"Neural network architectures including CNNs, RNNs, and transformers, with hands-on PyTorch labs.",6,ml;deep-learning,1;3,DS101,false,https://lsf.tu-dortmund.de/courses/DS103,Wed,08:00,10:00
+DS104,Natural Language Processing,"Text representation, sequence models, and modern large language model techniques.",6,nlp;deep-learning,2;4,DS103,false,https://lsf.tu-dortmund.de/courses/DS104,Thu,08:00,10:00
+DS105,Computer Vision,"Image classification, object detection, and segmentation using convolutional and transformer models.",6,vision;deep-learning,2;4,DS103,false,https://lsf.tu-dortmund.de/courses/DS105,Fri,08:00,10:00
+DS106,Reinforcement Learning,"Markov decision processes, value and policy iteration, deep RL algorithms.",6,ml;rl,3,DS102,false,https://lsf.tu-dortmund.de/courses/DS106,Mon,10:00,12:00
+DS107,Bayesian Statistics,"Bayesian inference, MCMC methods, and probabilistic programming.",5,statistics,2;4,DS101,false,https://lsf.tu-dortmund.de/courses/DS107,Tue,10:00,12:00
+DS108,Time Series Analysis,"ARIMA, state-space models, and forecasting techniques for sequential data.",5,statistics;forecasting,2;4,DS101,false,https://lsf.tu-dortmund.de/courses/DS108,Wed,10:00,12:00
+DS109,Causal Inference,"Potential outcomes framework, causal graphs, and treatment effect estimation.",5,statistics;causal,3,DS101,false,https://lsf.tu-dortmund.de/courses/DS109,Thu,10:00,12:00
+DS201,Big Data Systems,Distributed storage and compute with Spark and Hadoop ecosystems.,6,systems;big-data,1;3,,true,https://lsf.tu-dortmund.de/courses/DS201,Fri,10:00,12:00
+DS202,Cloud Computing for Data Science,Deploying data pipelines and ML models on cloud infrastructure (GCP/AWS).,5,systems;cloud,2;4,DS201,false,https://lsf.tu-dortmund.de/courses/DS202,Mon,12:00,14:00
+DS203,Database Systems,"Relational and NoSQL database design, query optimisation, and transactions.",6,systems;databases,1;3,,true,https://lsf.tu-dortmund.de/courses/DS203,Tue,12:00,14:00
+DS204,Data Engineering Pipelines,"ETL/ELT pipeline design, orchestration, and data quality monitoring.",5,systems;data-engineering,2;4,DS203,false,https://lsf.tu-dortmund.de/courses/DS204,Wed,12:00,14:00
+DS205,MLOps,"Model versioning, CI/CD for ML, monitoring, and reproducibility.",5,systems;mlops,3;4,DS102,false,https://lsf.tu-dortmund.de/courses/DS205,Thu,12:00,14:00
+DS301,Linear Algebra for Data Science,"Vector spaces, eigendecomposition, and matrix factorisation for ML applications.",5,math,1,,true,https://lsf.tu-dortmund.de/courses/DS301,Fri,12:00,14:00
+DS302,Optimisation Methods,"Convex optimisation, gradient-based methods, and applications to ML training.",5,math;optimisation,1;3,DS301,true,https://lsf.tu-dortmund.de/courses/DS302,Mon,14:00,16:00
+DS303,Probability Theory,Measure-theoretic probability foundations for statistical modelling.,5,math;statistics,1,,true,https://lsf.tu-dortmund.de/courses/DS303,Tue,14:00,16:00
+DS304,Numerical Methods,"Numerical linear algebra, differentiation, and integration for scientific computing.",4,math,2,DS301,false,https://lsf.tu-dortmund.de/courses/DS304,Wed,14:00,16:00
+DS401,Data Visualisation,Principles of visual encoding and interactive dashboard design.,4,visualisation,1;3,,false,https://lsf.tu-dortmund.de/courses/DS401,Thu,14:00,16:00
+DS402,Human-Computer Interaction for Data,Designing usable interfaces for data-driven decision tools.,4,hci,2;4,,false,https://lsf.tu-dortmund.de/courses/DS402,Fri,14:00,16:00
+DS403,Data Ethics and Privacy,"Fairness, accountability, transparency, and privacy-preserving data methods.",4,ethics,1;2;3;4,,true,https://lsf.tu-dortmund.de/courses/DS403,Mon,16:00,18:00
+DS404,Responsible AI,"Bias detection, model interpretability, and governance for AI systems.",5,ethics;ml,3;4,DS102,false,https://lsf.tu-dortmund.de/courses/DS404,Tue,16:00,18:00
+DS501,Graph Neural Networks,Representation learning on graph-structured data.,5,ml;graphs,3;4,DS102,false,https://lsf.tu-dortmund.de/courses/DS501,Wed,16:00,18:00
+DS502,Recommender Systems,"Collaborative filtering, matrix factorisation, and deep recommender architectures.",5,ml;applications,2;4,DS102,false,https://lsf.tu-dortmund.de/courses/DS502,Thu,16:00,18:00
+DS503,Anomaly Detection,Statistical and deep learning approaches to outlier and fraud detection.,5,ml;applications,3;4,DS102,false,https://lsf.tu-dortmund.de/courses/DS503,Fri,16:00,18:00
+DS504,Speech and Audio Processing,Signal processing and deep learning for speech recognition and synthesis.,5,deep-learning;audio,3;4,DS103,false,https://lsf.tu-dortmund.de/courses/DS504,Mon,08:00,10:00
+DS601,Research Seminar in Data Science,Student-led presentations on current data science research papers.,3,seminar,1;2;3;4,,true,https://lsf.tu-dortmund.de/courses/DS601,Tue,08:00,10:00
+DS602,Industry Project Lab,Applied group project with an industry or research partner.,8,project,3;4,DS102;DS201,true,https://lsf.tu-dortmund.de/courses/DS602,Wed,08:00,10:00
+DS701,Master's Thesis Preparation,Literature review and proposal development for the master's thesis.,3,thesis,3,,true,https://lsf.tu-dortmund.de/courses/DS701,,,
+DS702,Master's Thesis,Independent research culminating in a written thesis and defence.,30,thesis,4,DS701,true,https://lsf.tu-dortmund.de/courses/DS702,,,
