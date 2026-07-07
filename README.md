@@ -49,6 +49,39 @@ right after building a plan. Once it does sync, it reports back honestly per cou
 newly created, already on the calendar, updated, flagged as conflicting with another
 class, or skipped because that semester's already over — never just "done."
 
+## Set Up`.env`
+
+```bash
+cd uniguide
+cp .env.example .env
+```
+
+Then edit `uniguide/.env` (not `.env.example` — that's just a template) and provide API KEYS:
+
+1. **Gemini API key** (always required, even if you use Groq for the agents —
+   embeddings run on Gemini regardless): get one free at
+   [aistudio.google.com/apikey](https://aistudio.google.com/apikey), then set
+   `GEMINI_API_KEYS=your-key-here` (comma-separate more than one to auto-rotate on a
+   quota error).
+2. **LLM provider key** — pick one:
+   - `LLM_PROVIDER=groq` (default, free tier) → get a key at
+     [console.groq.com/keys](https://console.groq.com/keys), set `GROQ_API_KEYS=...`.
+   - `LLM_PROVIDER=claude` → get a key at
+     [console.anthropic.com](https://console.anthropic.com/), set `ANTHROPIC_API_KEY=...`.
+   - `LLM_PROVIDER=gemini` → reuses the same `GEMINI_API_KEYS` from step 1.
+3. **Google Calendar** (only needed if you want plans synced to a real calendar):
+   - In Google Cloud Console, create either a **service account key** (IAM & Admin →
+     Service Accounts → Keys) or an **OAuth client ID** (Credentials → Create → OAuth
+     client ID → Desktop app) and download its JSON — either works, UniGuide detects
+     which one you gave it automatically.
+   - Set `GOOGLE_SERVICE_ACCOUNT_FILE=./path/to/that.json`.
+   - Share the target Google Calendar with the key's `client_email` (service account
+     only — skip if you used an OAuth client ID), giving it "Make changes to events."
+   - Set `GOOGLE_CALENDAR_ID=` to that calendar's id (Calendar → Settings → "Integrate
+     calendar" — not `"primary"`, which for a service account is its own invisible
+     calendar, not a human's).
+
+
 ## Quick start
 
 ```bash
